@@ -11,6 +11,9 @@ function App() {
     if (keyword !== "" && keyword.length > 5) {
       console.log(keyword);
     }
+    return () => {
+      console.log("안돼");
+    };
   }, [keyword]);
   useEffect(() => {
     console.log(counter);
